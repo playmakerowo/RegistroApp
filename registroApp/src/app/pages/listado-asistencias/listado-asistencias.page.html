@@ -1,0 +1,119 @@
+<ion-header [translucent]="true">
+  <app-encabezado [pageTitle]="paginaTitulo"></app-encabezado>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <app-encabezado [pageTitle]="paginaTitulo"></app-encabezado>
+  </ion-header>
+
+  <ion-grid>
+    <ion-card>
+      <ion-card-header style="text-align: center;">
+        <ion-card class="card1" style="text-align: center;">
+          <div style="margin: 15px 15px ;">
+            <img class="imagen1" src="../../assets/img/Logo_DuocUC.png" alt=""
+              style="justify-content:center;border-radius: 5px; width: auto; height: auto;">
+          </div>
+
+        </ion-card>
+      </ion-card-header>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-card>
+            <ion-card-content>
+              <ion-card-header>
+                <ion-card-title style="float: left;">
+                  <h2 style="text-decoration: underline ;">Asistencias:</h2> 
+                </ion-card-title>
+              </ion-card-header>
+              <ion-button ion-button [routerLink]="['/horario']" style="display: block; margin: 20px; width: auto;" fill="outline" color="success">
+                  Ver Horario
+              </ion-button>
+            <mat-accordion class="mat-accordion">
+              <mat-expansion-panel class="mat-expansion-panel">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>ASY4131-003D(P)</mat-panel-title>
+                  <mat-panel-description class="mat-panel-description">Arquitectura</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <p style="font-size: 20px; color: yellow;">95%</p>
+                  <p style="font-size: 15px;">N° de clases registradas: 11</p>
+                  <p style="font-size: 15px;">Asistencia: 11</p>
+                  <ion-progress-bar color="success" value="0.95"></ion-progress-bar>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>CSY4111-002D(P)</mat-panel-title>
+                  <mat-panel-description>Calidad De Software</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <p style="font-size: 20px; color: yellow;">100%</p>
+                  <p style="font-size: 15px;">N° de clases registradas: 11</p>
+                  <p style="font-size: 15px;">Asistencia: 11</p>
+                  <ion-progress-bar color="success" value="1.0"></ion-progress-bar>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>MAT4140-003D(P)</mat-panel-title>
+                  <mat-panel-description>Estadistica Descriptiva</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <p style="font-size: 20px; color: yellow;">60%</p>
+                  <p style="font-size: 15px;">N° de clases registradas: 11</p>
+                  <p style="font-size: 15px;">Asistencia: 11</p>
+                  <ion-progress-bar color="success" value="0.6"></ion-progress-bar>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>EAY4470-004D(T)</mat-panel-title>
+                  <mat-panel-description>Etica Para El Trabajo</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <p style="font-size: 20px; color: yellow;">100%</p>
+                  <p style="font-size: 15px;">N° de clases registradas: 5</p>
+                  <p style="font-size: 15px;">Asistencia: 5</p>
+                  <ion-progress-bar color="success" value="1.0"></ion-progress-bar>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>INI5111-007D(T)</mat-panel-title>
+                  <mat-panel-description>Ingles Intermedio</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <p style="font-size: 20px; color: yellow;">50%</p>
+                  <p style="font-size: 15px;">N° de clases registradas: 23</p>
+                  <p style="font-size: 15px;">Asistencia: 23</p>
+                  <ion-progress-bar color="danger" value="0.5"></ion-progress-bar>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>PGY4121-005D(P)</mat-panel-title>
+                  <mat-panel-description>Programacion De Aplicaciones Moviles</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <p style="font-size: 20px; color: yellow;">100%</p>
+                  <p style="font-size: 15px;">N° de clases registradas: 12</p>
+                  <p style="font-size: 15px;">Asistencia: 12</p>
+                  <ion-progress-bar color="success" value="1.0"></ion-progress-bar>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+  </ion-grid>
+</ion-content>
+
+<app-piedepagina></app-piedepagina>

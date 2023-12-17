@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <app-encabezado [pageTitle]="tituloReestablecer"></app-encabezado>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <app-encabezado [pageTitle]="tituloReestablecer"></app-encabezado>
+  </ion-header>
+
+  <ion-grid>
+
+    <ion-card>
+      <ion-card-header style="text-align: center;">
+        <ion-card class="card1" style="text-align: center;">
+          <div style="margin: 15px 15px ;">
+            <img class="imagen1" src="../../assets/img/Logo_DuocUC.png" alt=""
+              style="justify-content:center;border-radius: 5px; width: auto; height: auto;">
+          </div>
+
+        </ion-card>
+      </ion-card-header>
+
+
+      <ion-card-content style="text-align: center;">
+        <ion-card>
+          <ion-card-title>Cambia tu Clave</ion-card-title>
+          <ion-text style="font-weight: bold;">
+            Bienvenido al portal para cambiar la clave de tu cuenta Duoc, ingresa tu nombre de usuario y rut para
+            iniciar el proceso.
+          </ion-text>
+          <form class="form">
+            <ion-item>
+              <ion-label type="text" position="stacked"></ion-label>
+              <ion-icon name="person-outline" slot="start"></ion-icon>
+              <ion-input placeholder="Nombre de Usuario"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked"></ion-label>
+              <ion-icon name="id-card-outline" slot="start"></ion-icon>
+              <ion-input type="text" placeholder="Rut (11.111.111-1)"></ion-input>
+            </ion-item>
+            <div>
+              <ion-item style="display: inline-block;">
+                <ion-button class="button" color="primary" style="font-size: small;text-align: auto;">Cambiar clave
+                  <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </div>
+          </form>
+        </ion-card>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-grid>
+</ion-content>
+
+<app-piedepagina></app-piedepagina>

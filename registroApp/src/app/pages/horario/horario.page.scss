@@ -1,0 +1,31 @@
+
+mat-expansion-panel{
+    background-color: rgb(1, 35, 69);
+    
+}
+
+mat-panel-title{
+  font-size: small;
+}
+
+mat-panel-description{
+    text-decoration: solid;
+    font-size: small;
+}
+
+
+
+.button {
+    transition-duration: 0.4s;
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+  }
+  
+  .button span{
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    color: white;
+  }

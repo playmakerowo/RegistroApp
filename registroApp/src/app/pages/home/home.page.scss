@@ -1,0 +1,54 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.button {
+  transition-duration: 0.4s;
+  display: inline-block;
+  font-size: 12px;
+  width: auto;
+  text-align: center;
+  margin: 10px;
+  height: 30px;
+}
+
+.button span{
+  margin-right: 10px;
+}
+
+.button:hover {
+  color: white;
+}
+
+.botonqr{
+  justify-content:center;
+  margin-top: 20px;
+  width:100px;
+  cursor:pointer;
+  cursor:hand;
+  text-align:center;
+}

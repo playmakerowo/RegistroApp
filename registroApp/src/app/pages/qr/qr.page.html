@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+
+    <app-encabezado [pageTitle]="paginaTitulo"></app-encabezado>
+
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+
+    <ion-grid>
+
+        <ion-card>
+            <ion-card-header style="text-align: center;">
+                <ion-card class="card1" style="text-align: center;">
+                <div style="margin: 15px 15px ;">
+                    <img class="imagen1" src="../../assets/img/Logo_DuocUC.png" alt=""
+                    style="justify-content:center;border-radius: 5px; width: auto; height: auto;">
+                </div>
+                </ion-card>
+                <ion-card-subtitle style="text-align: center;margin-block: 5px;"></ion-card-subtitle>
+                <ion-card-title>Escribe aqui el QR que desea crear  </ion-card-title>
+                <ion-input style="display: block; margin: 20px; width: auto;" [(ngModel)]="code" type="text" placeholder="Crear QR"></ion-input>
+
+                <ion-card>
+                    <ion-card-content style="text-align: center;">
+                        <ion-card-title style="font-size: medium; margin-bottom: 10px;" >QR creado:  </ion-card-title>
+                        <img *ngIf="displayQrCode()" [src]="generated" />
+                    </ion-card-content>
+                </ion-card>
+            </ion-card-header>
+
+        </ion-card>
+
+        
+
+        <ion-card>
+            <ion-button ion-button block (click)="process();" style="display: block; margin: 20px; width: auto;" color="success" >
+                <ion-icon name="qr-code-outline" slot="start"> </ion-icon>
+                  <ion-label>Crear QR</ion-label>
+              </ion-button>
+        </ion-card>
+
+        
+
+        <ion-card>
+            <ion-item [routerLink]="['/alumnos']" class="ion-activated">
+                <ion-icon name="people-outline" slot="start"></ion-icon>
+                <ion-label>Alumnos</ion-label>
+            </ion-item>
+
+        </ion-card>
+
+    </ion-grid>
+</ion-content>
+
+<app-piedepagina></app-piedepagina>

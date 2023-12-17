@@ -1,0 +1,17 @@
+.button {
+    transition-duration: 0.4s;
+    display: inline-block;
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+  }
+  
+  .button span{
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    color: white;
+  }

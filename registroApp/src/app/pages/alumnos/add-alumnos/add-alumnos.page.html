@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <app-encabezado [pageTitle]="paginaTitulo"></app-encabezado>
+</ion-header>
+<ion-row>
+  <ion-col>
+    <ion-card>
+      <ion-card-header style="text-align: center">
+        <div>
+         <ion-card-title>{{editing ? 'Modificar': 'Crear'}}</ion-card-title>
+        </div>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-input type="text" placeholder="Nombre" #nombre [(ngModel)]="alumno.nombre" ></ion-input>
+        <ion-input type="text" placeholder="Apellido" #apellido [(ngModel)]="alumno.apellido" ></ion-input>
+        <ion-input type="number" placeholder="Run" #run [(ngModel)]="alumno.run">Rut:</ion-input>
+        <ion-input type="text" placeholder="Dv" #dv [(ngModel)]="alumno.dv" ></ion-input>
+        <ion-input type="text" placeholder="Carrera" #carrera [(ngModel)]="alumno.carrera"></ion-input>
+        <ion-input type="text" placeholder="Seccion" #seccion [(ngModel)]="alumno.seccion"></ion-input>
+        <ion-item style="display: none">
+          <ion-label>Estado</ion-label>
+          <ion-select placeholder="Seleccionar Estado" #estado >
+            <ion-select-option value="true" >Alumno</ion-select-option>
+            <ion-select-option value="false" >Docente</ion-select-option>
+          </ion-select >
+        </ion-item>
+        <ion-input type="number" placeholder="Telefono" #telefono [(ngModel)]="alumno.telefono" >Telefono:</ion-input>
+        <ion-input type="text" placeholder="Correo" #correo [(ngModel)]="alumno.correo"></ion-input>
+        <ion-input type="text" placeholder="Sede" #sede  [(ngModel)]="alumno.sede"></ion-input>
+        
+        <ion-button
+          style="display: block; margin: 20px; width: auto"
+          color="primary"
+          (click)="editing ? updatePost() : addAlumnos(nombre, apellido, run, estado, carrera, seccion, sede, correo, telefono, dv )"
+          >{{editing ? 'Modificar': 'Crear'}}</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+<ion-content> </ion-content>

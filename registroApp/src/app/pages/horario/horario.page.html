@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <app-encabezado [pageTitle]="paginaTitulo"></app-encabezado>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <app-encabezado [pageTitle]="paginaTitulo"></app-encabezado>
+  </ion-header>
+
+  <ion-grid>
+    <ion-card>
+            <ion-card-header style="text-align: center;">
+              <ion-card class="card1" style="text-align: center;">
+                <div style="margin: 15px 15px ;">
+                  <img class="imagen1" src="../../assets/img/Logo_DuocUC.png" alt=""
+                    style="justify-content:center;border-radius: 5px; width: auto; height: auto;">
+                </div>
+              </ion-card>
+            </ion-card-header>
+
+      <ion-row>
+
+        <ion-col>
+          <ion-card>
+            <ion-card-content>
+              <ion-card-header>
+                <ion-card-title style="float: left;">
+                  <h2 style="text-decoration: underline ;">Horario:</h2> 
+                </ion-card-title>
+              </ion-card-header>
+              <ion-button ion-button [routerLink]="['/listado-asistencias']" style="display: block; margin: 20px; width: auto;" fill="outline" color="success">
+                  Ver asistencias
+              </ion-button>
+            <mat-accordion class="mat-accordion">
+              <mat-expansion-panel class="mat-expansion-panel">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>LUNES</mat-panel-title>
+                  <mat-panel-description class="mat-panel-description">INGENIERIA EN INFORMATICA</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>MARTES</mat-panel-title>
+                  <mat-panel-description class="mat-panel-description">INGENIERIA EN INFORMATICA</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>MIERCOLES</mat-panel-title>
+                  <mat-panel-description class="mat-panel-description">INGENIERIA EN INFORMATICA</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>JUEVES</mat-panel-title>
+                  <mat-panel-description class="mat-panel-description">INGENIERIA EN INFORMATICA</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>VIERNES</mat-panel-title>
+                  <mat-panel-description class="mat-panel-description">INGENIERIA EN INFORMATICA</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+  </ion-grid>
+</ion-content>
+
+<app-piedepagina></app-piedepagina>

@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <app-encabezado [pageTitle]="tituloLogin"></app-encabezado>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <app-encabezado [pageTitle]="tituloLogin"></app-encabezado>
+  </ion-header>
+
+  <ion-grid>
+
+    <ion-card>
+      <ion-card-header style="text-align: center;">
+        <ion-card class="card1" style="text-align: center;">
+          <div style="margin: 15px 15px ;">
+            <img class="imagen1" src="../../assets/img/Logo_DuocUC.png" alt=""
+              style="justify-content:center;border-radius: 5px; width: auto; height: auto;">
+          </div>
+
+        </ion-card>
+      </ion-card-header>
+
+      <ion-card-content style="text-align: center;">
+        <ion-card>
+        <ion-card-title>Inicio de sesión Docente Duoc UC</ion-card-title>
+        <form class="form">
+        <ion-item>
+          <ion-label type="text" position="stacked"></ion-label>
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-input placeholder="Usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"></ion-label>
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+
+      </form>
+    </ion-card>
+    <div>
+      <ion-item style="display: inline-block;">
+        <ion-button ion-button [routerLink]="['/home-docente']" class="button" color="success">Ingresar
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content style="text-align: center;">
+        <ion-card class="card-advertencia" style=" padding: 20px;margin: 40px; box-shadow: black;">
+        <div>
+          <ion-icon name="alert-circle-outline" slot="start" style="color:rgb(251, 192, 52);width: 30px; height: 30px;"></ion-icon>
+        </div>
+        <ion-text style=" color: rgb(251, 192, 52);display: inline-block;"><b style="font-weight: bold;">Si eres estudiante o docente</b>, para poder ingresar a los servicios
+          tecnológicos de Duoc UC, deberás usar la misma clave que actualmente usas en AVA-Collaborate. Si tienes
+          problemas para acceder u olvidaste tu contraseña, te recomendamos actualizar o recuperar tu clave.</ion-text>
+
+        </ion-card>
+        <div>
+          <ion-button ion-button [routerLink]="['/reestablecer']" class="button" fill="outline" color="primary" style="display: inline-block;font-size: small;">
+          <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>Cambiar Contraseña
+          </ion-button>
+        </div>
+
+      </ion-card-content>
+
+    </ion-card>
+
+  </ion-grid>
+</ion-content>
+
+<app-piedepagina></app-piedepagina>

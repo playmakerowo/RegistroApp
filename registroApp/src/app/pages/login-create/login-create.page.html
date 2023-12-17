@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <app-encabezado [pageTitle]="crearLogin"></app-encabezado>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <app-encabezado [pageTitle]="tituloReestablecer"></app-encabezado>
+  </ion-header>
+
+  <ion-grid>
+
+    <ion-card>
+      <ion-card-header style="text-align: center;">
+        <ion-card class="card1" style="text-align: center;">
+          <div style="margin: 15px 15px ;">
+            <img class="imagen1" src="../../assets/img/Logo_DuocUC.png" alt=""
+              style="justify-content:center;border-radius: 5px; width: auto; height: auto;">
+          </div>
+
+        </ion-card>
+      </ion-card-header>
+
+
+      <ion-card-content style="text-align: center;">
+        <ion-card>
+          <ion-card-title>Crear Usuario</ion-card-title>
+          <ion-text style="font-weight: bold;">
+            Bienvenido al portal para crear de tu cuenta Duoc, ingresa los datos para
+            iniciar el proceso.
+          </ion-text>
+          <form class="form">
+            <ion-item>
+              <ion-label type="text" position="stacked"></ion-label>
+              <ion-icon name="person-outline" slot="start"></ion-icon>
+              <ion-input placeholder="Nombre de Usuario" #nombre required minlength="1"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked"></ion-label>
+              <ion-icon name="key-outline" slot="start"></ion-icon>
+              <ion-input type="password" placeholder="Contraseña" #pass></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked"></ion-label>
+              <ion-icon name="key-outline" slot="start"></ion-icon>
+              <ion-input type="password" placeholder="Repetir Contraseña" #pass2></ion-input>
+            </ion-item>
+            <ion-item>
+            <ion-icon name="man-outline" slot="start"></ion-icon>
+            
+              <ion-select placeholder="Seleccionar Estado" value="true" #estado>
+                <ion-select-option value="true" >Alumno</ion-select-option>
+                <ion-select-option value="false" >Docente</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </form>
+        </ion-card>
+            <div>
+                <ion-button (click)="addUser(nombre, pass, pass2, estado)" class="button" color="success">Crear Usuario
+                  <ion-icon name="person-add-outline" slot="start"></ion-icon>
+                </ion-button>
+            </div>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-grid>
+</ion-content>
+
+<app-piedepagina></app-piedepagina>
